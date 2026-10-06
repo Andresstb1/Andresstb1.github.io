@@ -111,9 +111,30 @@
                 Designed and modeled integrated Mach-Zehnder Interferometers (MZIs) based on silicon-on-insulator (SOI) and silicon nitride (Si₃N₄) waveguide cross-sections for telecommunication wavelengths near 1550 nm. Implemented analytical transfer matrix formulations alongside scattering-matrix circuit solvers (SAX and GDSFactory) to evaluate spectral responses across balanced, phase-shifted, delay-imbalanced (ΔL), and amplitude-unbalanced configurations. Quantified the impact of coupler splitting ratios (κ_a, κ_b), excess insertion losses, and propagation attenuation on extinction ratio, insertion loss, and free spectral range (FSR), analyzing dual-arm path length differences to match target phase conditions and sensing performance criteria.
             </p>
         </div>
+
+                <div class="group pt-3 border-t border-slate-800/60">
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 mb-1">
+                <h4 class="text-sm font-semibold text-slate-200">Silicon Nitride Photonic PDK Characterization, Component Routing, and GDSII Layout Generation</h4>
+                <a href="https://github.com/Andresstb1/pic-upv-lab4" target="_blank" class="text-xs font-mono text-accent hover:underline">View repo →</a>
+            </div>
+            <p class="text-slate-400 text-xs leading-relaxed">
+                Designed and verified tape-out-ready photonic integrated circuit (PIC) layouts using the UPVfab Si₃N₄ (300 nm C-band) Process Design Kit (PDK) within GDSFactory and KLayout. Configured layer stack definitions and mapped structural geometries to fabrication lithography levels (Layer 1 core etching). Generated parametric component layouts—including grating couplers, multimode interference splitters (MMIs), and spiral test structures—implementing bend-radius routing, optical port alignment, and automated Design Rule Checking (DRC) to ensure geometrical compliance for cleanroom nanofabrication.  </p>
+        </div>
+                <div class="group pt-3 border-t border-slate-800/60">
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 mb-1">
+                <h4 class="text-sm font-semibold text-slate-200">End-to-End Design, Numerical Modeling, and PDK Layout of Silicon Photonic Integrated Circuits</h4>
+                <a href="https://github.com/Andresstb1/pic-upv-lab5-finalproject" target="_blank" class="text-xs font-mono text-accent hover:underline">View repo →</a>
+            </div>
+            <p class="text-slate-400 text-xs leading-relaxed">
+                Executed a full-stack design workflow for silicon-on-insulator (SOI) and silicon nitride photonic circuits operating across the telecom C-band (1500–1600 nm). Solved fundamental quasi-TE and quasi-TM optical modes in sub-micron strip waveguides (450×220 nm) using finite-difference mode solvers (Tidy3D/GPlugins), quantifying polarization purity, effective indices (n_eff ≈ 2.38), and material/waveguide group dispersion (n_g ≈ 4.29). Modeled optical power splitters—including directional couplers via even/odd supermode beat lengths (L_π) and multimode interference (MMI) devices via Eigenmode Expansion (EME)—to extract target cross-coupling ratios (κ = 0.5, 0.3, 0.23, 0.17, 0.05). Integrated scattering-matrix circuit models using SAX and synthesized DRC-compliant, tape-out-ready GDSII layouts with parameterized building blocks and automated routing in GDSFactory.    </p>
+        </div>
     </div>
 </article>
 
+
+
+
+                    
                     
                     <!-- FIELD 2: QUANTUM COMPUTING & ALGORITHMS -->
                     <article class="bg-cardbg border border-slate-800 rounded-xl p-6 hover:border-slate-700 transition">
@@ -150,41 +171,3 @@
                             </div>
                         </div>
                     </article>
-
-                    <!-- FIELD 3: CLEANROOM & HARDWARE FABRICATION -->
-                    <article class="bg-cardbg border border-slate-800 rounded-xl p-6 hover:border-slate-700 transition">
-                        <div class="flex flex-col md:flex-row md:items-center justify-between gap-2 mb-4 pb-4 border-b border-slate-800">
-                            <h3 class="text-lg font-bold text-white">3. Cleanroom Nanofabrication & Thin-Film Metrology</h3>
-                            <span class="text-xs font-mono bg-emerald-950 text-emerald-400 px-3 py-1 rounded-full border border-emerald-800/50 self-start md:self-auto">
-                                ISO7 Cleanroom / PVD
-                            </span>
-                        </div>
-                        <p class="text-slate-400 text-sm mb-6 leading-relaxed">
-                            Hands-on semiconductor processing, physical vapor deposition kinetics, and structural metrology inside research cleanroom facilities.
-                        </p>
-                        
-                        <!-- Subprojects -->
-                        <div class="space-y-4 pl-4 border-l-2 border-slate-800">
-                            <div class="group">
-                                <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 mb-1">
-                                    <h4 class="text-sm font-semibold text-slate-200">Magnetron Sputtering Characterization (Titanium & Copper)</h4>
-                                    <a href="https://github.com/tu-usuario/repo-sputtering" target="_blank" class="text-xs font-mono text-accent hover:underline">View repo →</a>
-                                </div>
-                                <p class="text-slate-400 text-xs leading-relaxed">
-                                    Analysis of deposition rates, thickness uniformity, and electrical resistivity profiling using four-point probe and profilometry data.
-                                </p>
-                            </div>
-
-                            <div class="group pt-3 border-t border-slate-800/60">
-                                <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 mb-1">
-                                    <h4 class="text-sm font-semibold text-slate-200">Optical Lithography Resolution & Etching Tests</h4>
-                                    <a href="https://github.com/tu-usuario/repo-lithography" target="_blank" class="text-xs font-mono text-accent hover:underline">View repo →</a>
-                                </div>
-                                <p class="text-slate-400 text-xs leading-relaxed">
-                                    Process parameter tuning for AZ photoresists, exposure dose optimization, and microscope surface inspection.
-                                </p>
-                            </div>
-                        </div>
-                    </article>
-
-
