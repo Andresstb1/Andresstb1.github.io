@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Ingeniería Física & Cuántica</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        darkbg: '#0b0f17',
+                        cardbg: '#111827',
+                        accent: '#38bdf8'
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Fuentes tipográficas -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        code, pre, .font-mono { font-family: 'JetBrains Mono', monospace; }
+    </style>
+</head>
+<body class="bg-darkbg text-slate-300 min-h-screen antialiased">
+
+    <div class="max-w-4xl mx-auto px-6 py-16">
+        
+        <!-- HERO SECTION -->
+        <header class="mb-16 border-b border-slate-800 pb-10">
+            <h1 class="text-3xl md:text-4xl font-bold text-white tracking-tight mb-3">
+                Tu Nombre
+            </h1>
+            <p class="text-xl text-accent font-medium mb-4">
+                Ingeniero Físico | Circuitos Fotónicos Integrados & Computación Cuántica
+            </p>
+            <p class="text-slate-400 max-w-2xl leading-relaxed mb-6">
+                Diseño, simulación y caracterización de dispositivos nanofotónicos y capas de software/hardware cuántico. Enfoque riguroso, código reproducible y validación experimental.
+            </p>
+            <div class="flex flex-wrap gap-4 text-sm">
+                <a href="https://github.com/tu-usuario" target="_blank" class="bg-slate-800 hover:bg-slate-700 text-white font-medium px-4 py-2 rounded-lg border border-slate-700 transition">
+                    GitHub
+                </a>
+                <a href="mailto:tu-correo@example.com" class="bg-slate-800 hover:bg-slate-700 text-white font-medium px-4 py-2 rounded-lg border border-slate-700 transition">
+                    Contacto
+                </a>
+                <a href="CV.pdf" target="_blank" class="bg-sky-600 hover:bg-sky-500 text-white font-medium px-4 py-2 rounded-lg transition">
+                    Descargar CV (PDF)
+                </a>
+            </div>
+        </header>
+
+        <!-- SECCIÓN DE PROYECTOS -->
+        <main class="space-y-12">
+            <section>
+                <h2 class="text-xl font-bold text-white mb-6 flex items-center gap-2">
+                    <span class="text-accent">//</span> Proyectos Destacados
+                </h2>
+
+                <div class="space-y-6">
+                    
+                    <!-- PROYECTO 1 -->
+                    <article class="bg-cardbg border border-slate-800 rounded-xl p-6 hover:border-slate-700 transition">
+                        <div class="flex flex-col md:flex-row md:items-center justify-between gap-2 mb-3">
+                            <h3 class="text-lg font-bold text-white">MZI Termo-Óptico en Nitruro de Silicio</h3>
+                            <span class="text-xs font-mono bg-sky-950 text-sky-400 px-3 py-1 rounded-full border border-sky-800/50 self-start md:self-auto">
+                                FDTD / gdsfactory
+                            </span>
+                        </div>
+                        <p class="text-slate-400 text-sm mb-4 leading-relaxed">
+                            Diseño y simulación de un interferómetro Mach-Zehnder con calentadores metálicos para modulación de fase. Curvas de transmisión analizadas bajo perfiles de campo electromagnético $|E|^2$.
+                        </p>
+                        <div class="flex flex-wrap gap-2 text-xs font-mono text-slate-400 mb-4 bg-slate-900/50 p-3 rounded-lg border border-slate-800/80">
+                            <span>Métrica: Extinction Ratio > 24 dB</span> • 
+                            <span>Pérdidas: < 1.2 dB</span>
+                        </div>
+                        <div class="flex gap-4 text-sm font-medium">
+                            <a href="https://github.com/tu-usuario/repo-proyecto-1" target="_blank" class="text-accent hover:underline">Ver repositorio →</a>
+                        </div>
+                    </article>
+
+                    <!-- PROYECTO 2 -->
+                    <article class="bg-cardbg border border-slate-800 rounded-xl p-6 hover:border-slate-700 transition">
+                        <div class="flex flex-col md:flex-row md:items-center justify-between gap-2 mb-3">
+                            <h3 class="text-lg font-bold text-white">Simulador de Circuitos Cuánticos & Mitigación de Ruido</h3>
+                            <span class="text-xs font-mono bg-purple-950 text-purple-400 px-3 py-1 rounded-full border border-purple-800/50 self-start md:self-auto">
+                                Qiskit / Python
+                            </span>
+                        </div>
+                        <p class="text-slate-400 text-sm mb-4 leading-relaxed">
+                            Implementación de algoritmos variacionales con análisis de descomposición de compuertas nativas y evaluación de fidelidad frente a canales de ruido des depolarización.
+                        </p>
+                        <div class="flex flex-wrap gap-2 text-xs font-mono text-slate-400 mb-4 bg-slate-900/50 p-3 rounded-lg border border-slate-800/80">
+                            <span>Framework: Qiskit Aer</span> • 
+                            <span>Validación: State Tomography</span>
+                        </div>
+                        <div class="flex gap-4 text-sm font-medium">
+                            <a href="https://github.com/tu-usuario/repo-proyecto-2" target="_blank" class="text-accent hover:underline">Ver repositorio →</a>
+                        </div>
+                    </article>
+
+                </div>
+            </section>
+
+            <!-- STACK TÉCNICO -->
+            <section class="border-t border-slate-800 pt-10">
+                <h2 class="text-xl font-bold text-white mb-4 flex items-center gap-2">
+                    <span class="text-accent">//</span> Stack Tecnológico
+                </h2>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-3 text-sm font-mono">
+                    <div class="bg-cardbg border border-slate-800 p-3 rounded-lg text-slate-300">Python / NumPy</div>
+                    <div class="bg-cardbg border border-slate-800 p-3 rounded-lg text-slate-300">Tidy3D / Lumerical</div>
+                    <div class="bg-cardbg border border-slate-800 p-3 rounded-lg text-slate-300">gdsfactory / KLayout</div>
+                    <div class="bg-cardbg border border-slate-800 p-3 rounded-lg text-slate-300">Qiskit / Qibo</div>
+                </div>
+            </section>
+        </main>
+
+        <!-- FOOTER -->
+        <footer class="mt-20 pt-6 border-t border-slate-800 text-center text-xs text-slate-500 font-mono">
+            © 2026 • Diseñado para alto rendimiento técnico.
+        </footer>
+
+    </div>
+
+</body>
+</html>
