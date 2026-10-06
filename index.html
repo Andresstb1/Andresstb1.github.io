@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es" class="dark">
+<html lang="en" class="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,7 +20,7 @@
             }
         }
     </script>
-    <!-- Fuentes tipográficas -->
+    <!-- Typography -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
     <style>
         body { font-family: 'Inter', sans-serif; }
@@ -37,104 +37,142 @@
                 Andrés Sanchez-Toril
             </h1>
             <p class="text-xl text-accent font-medium mb-4">
-                Ingeniero Físico | Circuitos Fotónicos Integrados & Computación Cuántica
+                Engineering Physics | Integrated Photonic Circuits & Quantum Technologies
             </p>
             <p class="text-slate-400 max-w-2xl leading-relaxed mb-6">
-                Diseño, simulación y caracterización experimental de dispositivos nanofotónicos y arquitectura de sistemas cuánticos. Enfoque riguroso, automatización con Python y validación física.
+                Design, simulation, and experimental characterization of nanophotonic devices and quantum system architectures. Rigorous physics background, automation via Python, and hardware validation.
             </p>
             <div class="flex flex-wrap gap-4 text-sm">
                 <a href="https://github.com/tu-usuario" target="_blank" class="bg-slate-800 hover:bg-slate-700 text-white font-medium px-4 py-2 rounded-lg border border-slate-700 transition">
                     GitHub
                 </a>
                 <a href="mailto:tu-correo@example.com" class="bg-slate-800 hover:bg-slate-700 text-white font-medium px-4 py-2 rounded-lg border border-slate-700 transition">
-                    Contacto
+                    Contact
                 </a>
                 <a href="CV.pdf" target="_blank" class="bg-sky-600 hover:bg-sky-500 text-white font-medium px-4 py-2 rounded-lg transition">
-                    Descargar CV (PDF)
+                    Download CV (PDF)
                 </a>
             </div>
         </header>
 
-        <!-- SECCIÓN DE PROYECTOS / SAMPLES -->
+        <!-- PROJECTS SECTION (NESTED HIERARCHY) -->
         <main class="space-y-12">
             <section>
                 <h2 class="text-xl font-bold text-white mb-6 flex items-center gap-2">
-                    <span class="text-accent">//</span> Samples de Proyectos
+                    <span class="text-accent">//</span> Core Projects & Research Fields
                 </h2>
 
-                <div class="space-y-6">
+                <div class="space-y-8">
                     
-                    <!-- PROYECTO 1 -->
+                    <!-- FIELD 1: INTEGRATED PHOTONICS -->
                     <article class="bg-cardbg border border-slate-800 rounded-xl p-6 hover:border-slate-700 transition">
-                        <div class="flex flex-col md:flex-row md:items-center justify-between gap-2 mb-3">
-                            <h3 class="text-lg font-bold text-white">Diseño y Simulación de MZI en Nitruro de Silicio</h3>
+                        <div class="flex flex-col md:flex-row md:items-center justify-between gap-2 mb-4 pb-4 border-b border-slate-800">
+                            <h3 class="text-lg font-bold text-white">1. Integrated Photonics & Passive/Active Devices</h3>
                             <span class="text-xs font-mono bg-sky-950 text-sky-400 px-3 py-1 rounded-full border border-sky-800/50 self-start md:self-auto">
-                                gdsfactory / Tidy3D
+                                Tidy3D / gdsfactory / KLayout
                             </span>
                         </div>
-                        <p class="text-slate-400 text-sm mb-4 leading-relaxed">
-                            Modelado electromagnético y diseño de layouts GDS para interferómetros Mach-Zehnder optimizados para modulación de fase de alta eficiencia.
+                        <p class="text-slate-400 text-sm mb-6 leading-relaxed">
+                            Electromagnetic simulation, mask layout generation, and optimization of silicon and silicon nitride photonic integrated circuit structures.
                         </p>
-                        <div class="flex gap-4 text-sm font-medium">
-                            <a href="https://github.com/tu-usuario/repo-mzi" target="_blank" class="text-accent hover:underline">Ver repositorio →</a>
+                        
+                        <!-- Subprojects -->
+                        <div class="space-y-4 pl-4 border-l-2 border-slate-800">
+                            <div class="group">
+                                <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 mb-1">
+                                    <h4 class="text-sm font-semibold text-slate-200">Thermo-Optic Mach-Zehnder Interferometer (MZI)</h4>
+                                    <a href="https://github.com/tu-usuario/repo-mzi" target="_blank" class="text-xs font-mono text-accent hover:underline">View repo →</a>
+                                </div>
+                                <p class="text-slate-400 text-xs leading-relaxed">
+                                    Design of phase modulators with integrated metallic micro-heaters, evaluating optical transmission spectra and electric field profiles $\vert{}E\vert{}^2$.
+                                </p>
+                            </div>
+
+                            <div class="group pt-3 border-t border-slate-800/60">
+                                <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 mb-1">
+                                    <h4 class="text-sm font-semibold text-slate-200">Multimode Interference (MMI) Couplers & Directional Couplers</h4>
+                                    <a href="https://github.com/tu-usuario/repo-mmi" target="_blank" class="text-xs font-mono text-accent hover:underline">View repo →</a>
+                                </div>
+                                <p class="text-slate-400 text-xs leading-relaxed">
+                                    Parametric sweep and FDTD verification of splitting ratios and insertion losses across standard optical telecommunication bands.
+                                </p>
+                            </div>
                         </div>
                     </article>
 
-                    <!-- PROYECTO 2 -->
+                    <!-- FIELD 2: QUANTUM COMPUTING & ALGORITHMS -->
                     <article class="bg-cardbg border border-slate-800 rounded-xl p-6 hover:border-slate-700 transition">
-                        <div class="flex flex-col md:flex-row md:items-center justify-between gap-2 mb-3">
-                            <h3 class="text-lg font-bold text-white">Simulador de Circuitos Cuánticos & Mitigación de Ruido</h3>
+                        <div class="flex flex-col md:flex-row md:items-center justify-between gap-2 mb-4 pb-4 border-b border-slate-800">
+                            <h3 class="text-lg font-bold text-white">2. Quantum Computing Algorithms & Noise Mitigation</h3>
                             <span class="text-xs font-mono bg-purple-950 text-purple-400 px-3 py-1 rounded-full border border-purple-800/50 self-start md:self-auto">
                                 Qiskit / Python
                             </span>
                         </div>
-                        <p class="text-slate-400 text-sm mb-4 leading-relaxed">
-                            Implementación y análisis de algoritmos cuánticos evaluando la fidelidad de compuertas y descomposición de operadores bajo canales de ruido simulados.
+                        <p class="text-slate-400 text-sm mb-6 leading-relaxed">
+                            Implementation of quantum routines, variational solvers, and circuit transpile pipelines evaluated under simulated noisy quantum channels.
                         </p>
-                        <div class="flex gap-4 text-sm font-medium">
-                            <a href="https://github.com/tu-usuario/repo-cuantico" target="_blank" class="text-accent hover:underline">Ver repositorio →</a>
+                        
+                        <!-- Subprojects -->
+                        <div class="space-y-4 pl-4 border-l-2 border-slate-800">
+                            <div class="group">
+                                <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 mb-1">
+                                    <h4 class="text-sm font-semibold text-slate-200">Shor's Period-Finding & Grover's Search Implementation</h4>
+                                    <a href="https://github.com/tu-usuario/repo-quantum-algos" target="_blank" class="text-xs font-mono text-accent hover:underline">View repo →</a>
+                                </div>
+                                <p class="text-slate-400 text-xs leading-relaxed">
+                                    Custom script modules modeling quantum subroutines, gate decompositions, and measurement outcome probability distributions.
+                                </p>
+                            </div>
+
+                            <div class="group pt-3 border-t border-slate-800/60">
+                                <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 mb-1">
+                                    <h4 class="text-sm font-semibold text-slate-200">Quantum State Tomography & Error Mitigation</h4>
+                                    <a href="https://github.com/tu-usuario/repo-error-mitigation" target="_blank" class="text-xs font-mono text-accent hover:underline">View repo →</a>
+                                </div>
+                                <p class="text-slate-400 text-xs leading-relaxed">
+                                    Post-processing frameworks to reconstruct density matrices and analyze fidelity degradation caused by depolarizing noise models.
+                                </p>
+                            </div>
                         </div>
                     </article>
 
-                    <!-- PROYECTO 3 -->
+                    <!-- FIELD 3: CLEANROOM & HARDWARE FABRICATION -->
                     <article class="bg-cardbg border border-slate-800 rounded-xl p-6 hover:border-slate-700 transition">
-                        <div class="flex flex-col md:flex-row md:items-center justify-between gap-2 mb-3">
-                            <h3 class="text-lg font-bold text-white">Caracterización de Películas Delgadas y Sputtering</h3>
+                        <div class="flex flex-col md:flex-row md:items-center justify-between gap-2 mb-4 pb-4 border-b border-slate-800">
+                            <h3 class="text-lg font-bold text-white">3. Cleanroom Nanofabrication & Thin-Film Metrology</h3>
                             <span class="text-xs font-mono bg-emerald-950 text-emerald-400 px-3 py-1 rounded-full border border-emerald-800/50 self-start md:self-auto">
-                                Sala Blanca / Metrología
+                                ISO7 Cleanroom / PVD
                             </span>
                         </div>
-                        <p class="text-slate-400 text-sm mb-4 leading-relaxed">
-                            Análisis cinético y metrológico de depósitos físicos de vapor (PVD) de metales mediante técnicas de caracterización eléctrica y óptica en entorno ISO7.
+                        <p class="text-slate-400 text-sm mb-6 leading-relaxed">
+                            Hands-on semiconductor processing, physical vapor deposition kinetics, and structural metrology inside research cleanroom facilities.
                         </p>
-                        <div class="flex gap-4 text-sm font-medium">
-                            <a href="https://github.com/tu-usuario/repo-sputtering" target="_blank" class="text-accent hover:underline">Ver repositorio →</a>
+                        
+                        <!-- Subprojects -->
+                        <div class="space-y-4 pl-4 border-l-2 border-slate-800">
+                            <div class="group">
+                                <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 mb-1">
+                                    <h4 class="text-sm font-semibold text-slate-200">Magnetron Sputtering Characterization (Titanium & Copper)</h4>
+                                    <a href="https://github.com/tu-usuario/repo-sputtering" target="_blank" class="text-xs font-mono text-accent hover:underline">View repo →</a>
+                                </div>
+                                <p class="text-slate-400 text-xs leading-relaxed">
+                                    Analysis of deposition rates, thickness uniformity, and electrical resistivity profiling using four-point probe and profilometry data.
+                                </p>
+                            </div>
+
+                            <div class="group pt-3 border-t border-slate-800/60">
+                                <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 mb-1">
+                                    <h4 class="text-sm font-semibold text-slate-200">Optical Lithography Resolution & Etching Tests</h4>
+                                    <a href="https://github.com/tu-usuario/repo-lithography" target="_blank" class="text-xs font-mono text-accent hover:underline">View repo →</a>
+                                </div>
+                                <p class="text-slate-400 text-xs leading-relaxed">
+                                    Process parameter tuning for AZ photoresists, exposure dose optimization, and microscope surface inspection.
+                                </p>
+                            </div>
                         </div>
                     </article>
 
-                </div>
-            </section>
-
-            <!-- STACK TÉCNICO -->
-            <section class="border-t border-slate-800 pt-10">
-                <h2 class="text-xl font-bold text-white mb-4 flex items-center gap-2">
-                    <span class="text-accent">//</span> Stack Tecnológico
-                </h2>
-                <div class="grid grid-cols-2 md:grid-cols-4 gap-3 text-sm font-mono">
-                    <div class="bg-cardbg border border-slate-800 p-3 rounded-lg text-slate-300">Python / NumPy</div>
-                    <div class="bg-cardbg border border-slate-800 p-3 rounded-lg text-slate-300">Tidy3D / Lumerical</div>
-                    <div class="bg-cardbg border border-slate-800 p-3 rounded-lg text-slate-300">gdsfactory / KLayout</div>
-                    <div class="bg-cardbg border border-slate-800 p-3 rounded-lg text-slate-300">Qiskit / Python</div>
-                </div>
-            </section>
-        </main>
-
-        <!-- FOOTER -->
-        <footer class="mt-20 pt-6 border-t border-slate-800 text-center text-xs text-slate-500 font-mono">
-            © 2026 Andrés Sanchez-Toril • Alto rendimiento técnico.
-        </footer>
-
-    </div>
-
-</body>
-</html>
+                    <!-- FIELD 4: OPTICAL FIBER SENSING & MODELING -->
+                    <article class="bg-cardbg border border-slate-800 rounded-xl p-6 hover:border-slate-700 transition">
+                        <div class="flex flex-col md:flex-row md:items-center justify-between gap-2 mb-4 pb-4 border-b border-slate-800">
+                            <h3 class="text-lg font-bold text-white">4. Distributed Fiber Optics & Sensor Modeling</h3>
