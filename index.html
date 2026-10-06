@@ -64,7 +64,7 @@
 
                 <div class="space-y-8">
                     
-                    <!-- FIELD 1: INTEGRATED PHOTONICS -->
+<!-- FIELD 1: INTEGRATED PHOTONICS -->
                     <article class="bg-cardbg border border-slate-800 rounded-xl p-6 hover:border-slate-700 transition">
                         <div class="flex flex-col md:flex-row md:items-center justify-between gap-2 mb-4 pb-4 border-b border-slate-800">
                             <h3 class="text-lg font-bold text-white">1. Integrated Photonics & Passive/Active Devices</h3>
@@ -78,28 +78,84 @@
                         
                         <!-- Subprojects -->
                         <div class="space-y-4 pl-4 border-l-2 border-slate-800">
+                            <!-- Subproject 1 -->
                             <div class="group">
                                 <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 mb-1">
-                                    <h4 class="text-sm font-semibold text-slate-200">Thermo-Optic Mach-Zehnder Interferometer (MZI)</h4>
-                                    <a href="https://github.com/tu-usuario/repo-mzi" target="_blank" class="text-xs font-mono text-accent hover:underline">View repo →</a>
+                                    <h4 class="text-sm font-semibold text-slate-200">Modal Simulation and Analysis of Integrated Photonic Couplers (DC & MMI)</h4>
+                                    <a href="https://github.com/Andresstb1/pic-upv-lab0" target="_blank" class="text-xs font-mono text-accent hover:underline">View repo →</a>
                                 </div>
                                 <p class="text-slate-400 text-xs leading-relaxed">
-                                    Design of phase modulators with integrated metallic micro-heaters, evaluating optical transmission spectra and electric field profiles $\vert{}E\vert{}^2$.
+                                    Designed and simulated directional couplers (DC) and multimode interference (MMI) devices on a silicon nitride ($\text{Si}_3\text{N}_4/\text{SiO}_2$) platform at $1550\text{ nm}$ using Tidy3D and GDSFactory. Successfully solved and analyzed complex electromagnetic mode distributions, distinguishing even/odd and higher-order quasi-TE and quasi-TM modes, and computed optical coupling parameters, including effective indices ($n_{\text{eff}}$), polarization fractions, and beating lengths ($L_\pi$) for full optical power transfer and MMI design.
                                 </p>
                             </div>
 
+                            <!-- Subproject 2 (Ejemplo para cuando añadas el siguiente) -->
                             <div class="group pt-3 border-t border-slate-800/60">
                                 <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 mb-1">
-                                    <h4 class="text-sm font-semibold text-slate-200">Multimode Interference (MMI) Couplers & Directional Couplers</h4>
-                                    <a href="https://github.com/tu-usuario/repo-mmi" target="_blank" class="text-xs font-mono text-accent hover:underline">View repo →</a>
+                                    <h4 class="text-sm font-semibold text-slate-200">Electromagnetic Mode Solving and Compact Modeling of Silicon Nitride Waveguides</h4>
+                                    <a href="https://github.com/Andresstb1/pic-upv-lab1" target="_blank" class="text-xs font-mono text-accent hover:underline">View repo →</a>
                                 </div>
                                 <p class="text-slate-400 text-xs leading-relaxed">
-                                    Parametric sweep and FDTD verification of splitting ratios and insertion losses across standard optical telecommunication bands.
+                                    Conducted numerical electromagnetic mode solving and dispersion characterization of strip (deep-etched) and rib (shallow-etched) silicon nitride ($\text{Si}_3\text{N}_4/\text{SiO}_2$) waveguides at $1550\text{ nm}$ using Tidy3D and GDSFactory. Optimized finite-difference grid parameters through numerical convergence studies and evaluated geometric width dependencies alongside polarization fraction mappings (quasi-TE/TM). Formulated second-order polynomial compact models to extract modal effective indices ($n_{\text{eff}}$), optical group indices ($n_g$), and chromatic dispersion ($D$), while analyzing bent waveguide mode profiles to quantify curvature-induced mode-mismatch and radiation losses.
                                 </p>
                             </div>
+
+                            <!-- Subproject 2 (Ejemplo para cuando añadas el siguiente) -->
+                            <div class="group pt-3 border-t border-slate-800/60">
+                                <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 mb-1">
+                                    <h4 class="text-sm font-semibold text-slate-200">Design, EME Modeling, and Characterization of $\text{Si}_3\text{N}_4$ Directional and MMI Couplers</h4>
+                                    <a href="https://github.com/Andresstb1/pic-upv-lab2" target="_blank" class="text-xs font-mono text-accent hover:underline">View repo →</a>
+                                </div>
+                                <p class="text-slate-400 text-xs leading-relaxed">
+                                    Designed and modeled silicon nitride ($\text{Si}_3\text{N}_4/\text{SiO}_2$) directional couplers (DC) and multimode interference (MMI) devices operating in the $1500\text{–}1600\text{ nm}$ telecommunication band using Tidy3D and Eigenmode Expansion (EME) methods via GDSFactory. Computed the beating length ($L_\pi$) and coupling coefficient ($K$) through even/odd supermode decomposition for varying waveguide gaps ($0.6\text{–}1.6\ \mu\text{m}$) and determined criteria for total optical cross-transfer ($L=L_\pi$), $3\text{ dB}$ power splitting ($L=L_\pi/2$), and uncoupled parallel routing thresholds ($K \le 0.01$ over chip-scale lengths). In parallel, modeled $2\times2$ and $1\times4$ MMI splitters based on self-imaging theory, analyzing modal interference profiles, optical excess loss, and transmission balance across output ports.
+                                </p>
+                            </div>
+
+                            <!-- Subproject 2 (Ejemplo para cuando añadas el siguiente) -->
+                            <div class="group pt-3 border-t border-slate-800/60">
+                                <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 mb-1">
+                                    <h4 class="text-sm font-semibold text-slate-200">Modeling, Analytical Formulation, and Circuit-Level Simulation of Integrated Silicon Photonic MZIs</h4>
+                                    <a href="https://github.com/Andresstb1/pic-upv-lab3" target="_blank" class="text-xs font-mono text-accent hover:underline">View repo →</a>
+                                </div>
+                                <p class="text-slate-400 text-xs leading-relaxed">
+                                    Designed and modeled integrated Mach-Zehnder Interferometers (MZIs) based on silicon-on-insulator (SOI) and silicon nitride ($\text{Si}_3\text{N}_4$) waveguide cross-sections for telecommunication wavelengths near $1550\text{ nm}$. Implemented analytical transfer matrix formulations alongside scattering-matrix circuit solvers (SAX and GDSFactory) to evaluate spectral responses across balanced, phase-shifted, delay-imbalanced ($\Delta L$), and amplitude-unbalanced configurations. Quantified the impact of coupler splitting ratios ($\kappa_a, \kappa_b$), excess insertion losses, and propagation attenuation on extinction ratio, insertion loss, and free spectral range (FSR), analyzing dual-arm path length differences to match target phase conditions and sensing performance criteria.
+                                </p>
+                            </div>
+
+
+                            <!-- Subproject 2 (Ejemplo para cuando añadas el siguiente) -->
+                            <div class="group pt-3 border-t border-slate-800/60">
+                                <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 mb-1">
+                                    <h4 class="text-sm font-semibold text-slate-200">Silicon Nitride Photonic PDK Characterization, Component Routing, and GDSII Layout Generation</h4>
+                                    <a href="https://github.com/Andresstb1/pic-upv-lab4" target="_blank" class="text-xs font-mono text-accent hover:underline">View repo →</a>
+                                </div>
+                                <p class="text-slate-400 text-xs leading-relaxed">
+                                   Designed and verified tape-out-ready photonic integrated circuit (PIC) layouts using the UPVfab $\text{Si}_3\text{N}_4$ ($300\text{ nm}$ C-band) Process Design Kit (PDK) within GDSFactory and KLayout. Configured layer stack definitions and mapped structural geometries to fabrication lithography levels (Layer 1 core etching). Generated parametric component layouts—including grating couplers, multimode interference splitters (MMIs), and spiral test structures—implementing bend-radius routing, optical port alignment, and automated Design Rule Checking (DRC) to ensure geometrical compliance for cleanroom nanofabrication.
+                                </p>
+                            </div>
+
+
+                            <!-- Subproject 2 (Ejemplo para cuando añadas el siguiente) -->
+                            <div class="group pt-3 border-t border-slate-800/60">
+                                <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 mb-1">
+                                    <h4 class="text-sm font-semibold text-slate-200">Full-Flow Photonic Integrated Circuit Engineering: From FDTD/EME Modal Simulations to Tape-Out-Ready GDSII Layout</h4>
+                                    <a href="https://github.com/Andresstb1/pic-upv-lab5-finalproject" target="_blank" class="text-xs font-mono text-accent hover:underline">View repo →</a>
+                                </div>
+                                <p class="text-slate-400 text-xs leading-relaxed">
+                                    Executed a full-stack design workflow for silicon-on-insulator (SOI) and silicon nitride photonic circuits operating across the telecom C-band ($1500\text{--}1600\text{ nm}$). Solved fundamental quasi-TE and quasi-TM optical modes in sub-micron strip waveguides ($450\times 220\text{ nm}$) using finite-difference mode solvers (Tidy3D/GPlugins), quantifying polarization purity, effective indices ($n_{\text{eff}} \approx 2.38$), and material/waveguide group dispersion ($n_g \approx 4.29$). Modeled optical power splitters—including directional couplers via even/odd supermode beat lengths ($L_\pi$) and multimode interference (MMI) devices via Eigenmode Expansion (EME)—to extract target cross-coupling ratios ($\kappa = 0.5, 0.3, 0.23, 0.17, 0.05$). Integrated scattering-matrix circuit models using SAX and synthesized DRC-compliant, tape-out-ready GDSII layouts with parameterized building blocks and automated routing in GDSFactory.
+                                </p>
+                            </div>
+
+
+
+
+
+                            
                         </div>
                     </article>
 
+
+                    
                     <!-- FIELD 2: QUANTUM COMPUTING & ALGORITHMS -->
                     <article class="bg-cardbg border border-slate-800 rounded-xl p-6 hover:border-slate-700 transition">
                         <div class="flex flex-col md:flex-row md:items-center justify-between gap-2 mb-4 pb-4 border-b border-slate-800">
@@ -172,7 +228,4 @@
                         </div>
                     </article>
 
-                    <!-- FIELD 4: OPTICAL FIBER SENSING & MODELING -->
-                    <article class="bg-cardbg border border-slate-800 rounded-xl p-6 hover:border-slate-700 transition">
-                        <div class="flex flex-col md:flex-row md:items-center justify-between gap-2 mb-4 pb-4 border-b border-slate-800">
-                            <h3 class="text-lg font-bold text-white">4. Distributed Fiber Optics & Sensor Modeling</h3>
+
