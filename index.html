@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio | Ingeniería Física & Cuántica</title>
+    <title>Andrés Sanchez-Toril portfolio</title>
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -34,13 +34,13 @@
         <!-- HERO SECTION -->
         <header class="mb-16 border-b border-slate-800 pb-10">
             <h1 class="text-3xl md:text-4xl font-bold text-white tracking-tight mb-3">
-                Tu Nombre
+                Andrés Sanchez-Toril
             </h1>
             <p class="text-xl text-accent font-medium mb-4">
                 Ingeniero Físico | Circuitos Fotónicos Integrados & Computación Cuántica
             </p>
             <p class="text-slate-400 max-w-2xl leading-relaxed mb-6">
-                Diseño, simulación y caracterización de dispositivos nanofotónicos y capas de software/hardware cuántico. Enfoque riguroso, código reproducible y validación experimental.
+                Diseño, simulación y caracterización experimental de dispositivos nanofotónicos y arquitectura de sistemas cuánticos. Enfoque riguroso, automatización con Python y validación física.
             </p>
             <div class="flex flex-wrap gap-4 text-sm">
                 <a href="https://github.com/tu-usuario" target="_blank" class="bg-slate-800 hover:bg-slate-700 text-white font-medium px-4 py-2 rounded-lg border border-slate-700 transition">
@@ -55,11 +55,11 @@
             </div>
         </header>
 
-        <!-- SECCIÓN DE PROYECTOS -->
+        <!-- SECCIÓN DE PROYECTOS / SAMPLES -->
         <main class="space-y-12">
             <section>
                 <h2 class="text-xl font-bold text-white mb-6 flex items-center gap-2">
-                    <span class="text-accent">//</span> Proyectos Destacados
+                    <span class="text-accent">//</span> Samples de Proyectos
                 </h2>
 
                 <div class="space-y-6">
@@ -67,20 +67,16 @@
                     <!-- PROYECTO 1 -->
                     <article class="bg-cardbg border border-slate-800 rounded-xl p-6 hover:border-slate-700 transition">
                         <div class="flex flex-col md:flex-row md:items-center justify-between gap-2 mb-3">
-                            <h3 class="text-lg font-bold text-white">MZI Termo-Óptico en Nitruro de Silicio</h3>
+                            <h3 class="text-lg font-bold text-white">Diseño y Simulación de MZI en Nitruro de Silicio</h3>
                             <span class="text-xs font-mono bg-sky-950 text-sky-400 px-3 py-1 rounded-full border border-sky-800/50 self-start md:self-auto">
-                                FDTD / gdsfactory
+                                gdsfactory / Tidy3D
                             </span>
                         </div>
                         <p class="text-slate-400 text-sm mb-4 leading-relaxed">
-                            Diseño y simulación de un interferómetro Mach-Zehnder con calentadores metálicos para modulación de fase. Curvas de transmisión analizadas bajo perfiles de campo electromagnético $|E|^2$.
+                            Modelado electromagnético y diseño de layouts GDS para interferómetros Mach-Zehnder optimizados para modulación de fase de alta eficiencia.
                         </p>
-                        <div class="flex flex-wrap gap-2 text-xs font-mono text-slate-400 mb-4 bg-slate-900/50 p-3 rounded-lg border border-slate-800/80">
-                            <span>Métrica: Extinction Ratio > 24 dB</span> • 
-                            <span>Pérdidas: < 1.2 dB</span>
-                        </div>
                         <div class="flex gap-4 text-sm font-medium">
-                            <a href="https://github.com/tu-usuario/repo-proyecto-1" target="_blank" class="text-accent hover:underline">Ver repositorio →</a>
+                            <a href="https://github.com/tu-usuario/repo-mzi" target="_blank" class="text-accent hover:underline">Ver repositorio →</a>
                         </div>
                     </article>
 
@@ -93,14 +89,26 @@
                             </span>
                         </div>
                         <p class="text-slate-400 text-sm mb-4 leading-relaxed">
-                            Implementación de algoritmos variacionales con análisis de descomposición de compuertas nativas y evaluación de fidelidad frente a canales de ruido des depolarización.
+                            Implementación y análisis de algoritmos cuánticos evaluando la fidelidad de compuertas y descomposición de operadores bajo canales de ruido simulados.
                         </p>
-                        <div class="flex flex-wrap gap-2 text-xs font-mono text-slate-400 mb-4 bg-slate-900/50 p-3 rounded-lg border border-slate-800/80">
-                            <span>Framework: Qiskit Aer</span> • 
-                            <span>Validación: State Tomography</span>
-                        </div>
                         <div class="flex gap-4 text-sm font-medium">
-                            <a href="https://github.com/tu-usuario/repo-proyecto-2" target="_blank" class="text-accent hover:underline">Ver repositorio →</a>
+                            <a href="https://github.com/tu-usuario/repo-cuantico" target="_blank" class="text-accent hover:underline">Ver repositorio →</a>
+                        </div>
+                    </article>
+
+                    <!-- PROYECTO 3 -->
+                    <article class="bg-cardbg border border-slate-800 rounded-xl p-6 hover:border-slate-700 transition">
+                        <div class="flex flex-col md:flex-row md:items-center justify-between gap-2 mb-3">
+                            <h3 class="text-lg font-bold text-white">Caracterización de Películas Delgadas y Sputtering</h3>
+                            <span class="text-xs font-mono bg-emerald-950 text-emerald-400 px-3 py-1 rounded-full border border-emerald-800/50 self-start md:self-auto">
+                                Sala Blanca / Metrología
+                            </span>
+                        </div>
+                        <p class="text-slate-400 text-sm mb-4 leading-relaxed">
+                            Análisis cinético y metrológico de depósitos físicos de vapor (PVD) de metales mediante técnicas de caracterización eléctrica y óptica en entorno ISO7.
+                        </p>
+                        <div class="flex gap-4 text-sm font-medium">
+                            <a href="https://github.com/tu-usuario/repo-sputtering" target="_blank" class="text-accent hover:underline">Ver repositorio →</a>
                         </div>
                     </article>
 
@@ -116,14 +124,14 @@
                     <div class="bg-cardbg border border-slate-800 p-3 rounded-lg text-slate-300">Python / NumPy</div>
                     <div class="bg-cardbg border border-slate-800 p-3 rounded-lg text-slate-300">Tidy3D / Lumerical</div>
                     <div class="bg-cardbg border border-slate-800 p-3 rounded-lg text-slate-300">gdsfactory / KLayout</div>
-                    <div class="bg-cardbg border border-slate-800 p-3 rounded-lg text-slate-300">Qiskit / Qibo</div>
+                    <div class="bg-cardbg border border-slate-800 p-3 rounded-lg text-slate-300">Qiskit / Python</div>
                 </div>
             </section>
         </main>
 
         <!-- FOOTER -->
         <footer class="mt-20 pt-6 border-t border-slate-800 text-center text-xs text-slate-500 font-mono">
-            © 2026 • Diseñado para alto rendimiento técnico.
+            © 2026 Andrés Sanchez-Toril • Alto rendimiento técnico.
         </footer>
 
     </div>
