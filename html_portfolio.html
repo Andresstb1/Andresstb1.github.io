@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio | Creative Technologist & Engineering</title>
+  <meta name="description" content="Portafolio interactivo de ingeniería y desarrollo frontend de alto impacto.">
+
+  <!-- Precarga de póster de vídeo para eliminar CLS -->
+  <link rel="preload" as="image" href="assets/images/hero-poster.webp" fetchpriority="high">
+
+  <!-- Estilos y fuentes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- GSAP + ScrollTrigger desde CDN con carga diferida -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+  <script src="js/main.js" defer></script>
+</head>
+<body class="bg-dark text-light antialiased selection:bg-cyan selection:text-black">
+
+  <!-- Cursor interactivo personalizado (desactivado en pantallas táctiles) -->
+  <div class="custom-cursor-follower" id="cursor-follower" aria-hidden="true"></div>
+  <div class="custom-cursor-dot" id="cursor-dot" aria-hidden="true"></div>
+
+  <!-- Navegación -->
+  <header class="fixed top-0 left-0 w-full z-50 mix-blend-difference px-6 py-6 flex justify-between items-center transition-all duration-300">
+    <a href="#hero" class="font-mono text-sm tracking-widest uppercase hover-magnet" data-scramble="SYS.CORE">SYS.CORE</a>
+    <nav class="flex gap-8 font-mono text-xs uppercase tracking-wider">
+      <a href="#projects" class="hover-magnet link-interactive">Proyectos</a>
+      <a href="#about" class="hover-magnet link-interactive">Acerca</a>
+      <a href="#contact" class="hover-magnet link-interactive">Contacto</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero Section con Vídeo de Fondo -->
+    <section id="hero" class="relative min-h-screen flex items-center justify-center overflow-hidden px-6">
+      <div class="video-background-wrapper">
+        <video 
+          id="hero-video"
+          autoplay 
+          muted 
+          loop 
+          playsinline 
+          preload="metadata"
+          poster="assets/images/hero-poster.webp"
+          class="video-background"
+        >
+          <!-- Prioridad WebM para navegadores modernos; MP4 como fallback universal -->
+          <source src="assets/videos/hero-bg.webm" type="video/webm">
+          <source src="assets/videos/hero-bg.mp4" type="video/mp4">
+        </video>
+        <!-- Máscara de degradado para legibilidad del contenido -->
+        <div class="video-overlay"></div>
+      </div>
+
+      <div class="relative z-10 max-w-5xl w-full text-center">
+        <p class="font-mono text-xs tracking-widest text-cyan uppercase mb-4 opacity-0 hero-elem">
+          [ Physical & Computational Architecture ]
+        </p>
+        <h1 class="hero-title text-4xl sm:text-6xl md:text-8xl font-bold tracking-tighter uppercase mb-6 opacity-0 hero-elem">
+          Deep Tech <br><span class="text-gradient">Interfaces</span>
+        </h1>
+        <p class="max-w-xl mx-auto text-sm sm:text-base text-muted font-light mb-8 opacity-0 hero-elem">
+          Diseño y desarrollo de sistemas frontend de baja latencia, visualizaciones científicas y experiencias inmersivas interactivas.
+        </p>
+        <div class="flex justify-center gap-4 opacity-0 hero-elem">
+          <a href="#projects" class="btn btn-primary hover-magnet">
+            Explorar Obras
+          </a>
+          <a href="#contact" class="btn btn-secondary hover-magnet">
+            Iniciar Terminal
+          </a>
+        </div>
+      </div>
+
+      <div class="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 opacity-50 font-mono text-[10px] tracking-widest uppercase">
+        <span>Scroll</span>
+        <div class="w-px h-8 bg-cyan/50 animate-pulse"></div>
+      </div>
+    </section>
+
+    <!-- Sección de Proyectos -->
+    <section id="projects" class="py-32 px-6 max-w-7xl mx-auto">
+      <div class="flex flex-col md:flex-row justify-between items-start md:items-end mb-16 border-b border-border pb-6">
+        <div>
+          <span class="font-mono text-xs text-cyan tracking-widest uppercase">[ 01 // Registro de Sistemas ]</span>
+          <h2 class="text-3xl sm:text-5xl font-bold tracking-tight mt-2">Casos de Estudio</h2>
+        </div>
+        <p class="font-mono text-xs text-muted mt-4 md:mt-0">INDEXED: 2024 — 2026</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <!-- Tarjeta de Proyecto 01 -->
+        <article class="project-card group relative p-8 rounded-2xl bg-surface border border-border overflow-hidden">
+          <div class="card-glow" aria-hidden="true"></div>
+          <div class="relative z-10 flex flex-col h-full justify-between">
+            <div>
+              <div class="flex justify-between items-center mb-6">
+                <span class="font-mono text-xs text-muted">01 / QUANTUM UI</span>
+                <span class="text-xs font-mono px-2 py-1 rounded border border-cyan/30 text-cyan">Live Demo</span>
+              </div>
+              <h3 class="text-2xl font-bold mb-3 group-hover:text-cyan transition-colors">
+                Transceptor Fotónico Virtual
+              </h3>
+              <p class="text-sm text-muted mb-6">
+                Simulador web interactivo de interferómetros Mach-Zehnder y guías de ondas en nitruro de silicio.
+              </p>
+            </div>
+            <div class="pt-6 border-t border-border flex justify-between items-center font-mono text-xs">
+              <span>WebGL / Three.js / GSAP</span>
+              <span class="transform group-hover:translate-x-1 transition-transform">→</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Tarjeta de Proyecto 02 -->
+        <article class="project-card group relative p-8 rounded-2xl bg-surface border border-border overflow-hidden">
+          <div class="card-glow" aria-hidden="true"></div>
+          <div class="relative z-10 flex flex-col h-full justify-between">
+            <div>
+              <div class="flex justify-between items-center mb-6">
+                <span class="font-mono text-xs text-muted">02 / CRYPTO MIGRATION</span>
+                <span class="text-xs font-mono px-2 py-1 rounded border border-border text-muted">Infraestructura</span>
+              </div>
+              <h3 class="text-2xl font-bold mb-3 group-hover:text-cyan transition-colors">
+                Monitor Post-Quantum PQC
+              </h3>
+              <p class="text-sm text-muted mb-6">
+                Panel de control en tiempo real para auditorías criptográficas de redes críticas contra algoritmos de Shor.
+              </p>
+            </div>
+            <div class="pt-6 border-t border-border flex justify-between items-center font-mono text-xs">
+              <span>WebSockets / Tailwind / Canvas</span>
+              <span class="transform group-hover:translate-x-1 transition-transform">→</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Sección Acerca de / Especificaciones -->
+    <section id="about" class="py-24 px-6 max-w-5xl mx-auto border-t border-border">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+        <div class="md:col-span-1">
+          <span class="font-mono text-xs text-cyan tracking-widest uppercase">[ 02 // Stack & Filosofía ]</span>
+          <h2 class="text-2xl font-bold tracking-tight mt-2">Ingeniería Rigurosa</h2>
+        </div>
+        <div class="md:col-span-2 space-y-6 text-muted text-sm sm:text-base leading-relaxed">
+          <p>
+            Construcción de software estático con estándares industriales: código limpio, cero dependencias infladas y un consumo mínimo de recursos de CPU/GPU del cliente.
+          </p>
+          <div class="grid grid-cols-2 gap-4 pt-4 font-mono text-xs">
+            <div class="p-4 rounded-lg bg-surface border border-border">
+              <span class="text-light block font-bold mb-1">Rendimiento</span>
+              <span class="text-muted">99+ Google Lighthouse, sub-100ms TTFB en Edge CDN.</span>
+            </div>
+            <div class="p-4 rounded-lg bg-surface border border-border">
+              <span class="text-light block font-bold mb-1">Accesibilidad</span>
+              <span class="text-muted">Compatibilidad total con WCAG 2.1 AA y Reduced Motion nativo.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contact" class="py-12 border-t border-border px-6">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-6 font-mono text-xs text-muted">
+      <div>[ STATUS: OPERATIONAL ]</div>
+      <div>Desplegado en GitHub Pages vía GitHub Actions</div>
+      <div class="flex gap-4">
+        <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="hover:text-cyan transition-colors">GH</a>
+        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="hover:text-cyan transition-colors">LI</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
