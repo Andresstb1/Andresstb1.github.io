@@ -139,35 +139,32 @@
                     <!-- FIELD 2: QUANTUM COMPUTING & ALGORITHMS -->
                     <article class="bg-cardbg border border-slate-800 rounded-xl p-6 hover:border-slate-700 transition">
                         <div class="flex flex-col md:flex-row md:items-center justify-between gap-2 mb-4 pb-4 border-b border-slate-800">
-                            <h3 class="text-lg font-bold text-white">2. Quantum Computing Algorithms & Noise Mitigation</h3>
+                            <h3 class="text-lg font-bold text-white">2. Programmable Photonics </h3>
                             <span class="text-xs font-mono bg-purple-950 text-purple-400 px-3 py-1 rounded-full border border-purple-800/50 self-start md:self-auto">
-                                Qiskit / Python
+                                 Tidy3D / gdsfactory / KLayout
                             </span>
                         </div>
-                        <p class="text-slate-400 text-sm mb-6 leading-relaxed">
-                            Implementation of quantum routines, variational solvers, and circuit transpile pipelines evaluated under simulated noisy quantum channels.
-                        </p>
+                       
                         
                         <!-- Subprojects -->
                         <div class="space-y-4 pl-4 border-l-2 border-slate-800">
                             <div class="group">
                                 <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 mb-1">
-                                    <h4 class="text-sm font-semibold text-slate-200">Shor's Period-Finding & Grover's Search Implementation</h4>
-                                    <a href="https://github.com/tu-usuario/repo-quantum-algos" target="_blank" class="text-xs font-mono text-accent hover:underline">View repo →</a>
+                                    <h4 class="text-sm font-semibold text-slate-200">Python Programmable photonics</h4>
+                                    <a href="https://github.com/Andresstb1/Progammable_Photonics_labs" target="_blank" class="text-xs font-mono text-accent hover:underline">View repo →</a>
                                 </div>
                                 <p class="text-slate-400 text-xs leading-relaxed">
-                                    Custom script modules modeling quantum subroutines, gate decompositions, and measurement outcome probability distributions.
-                                </p>
+                                   The analytical and computational workflows demonstrated across these notebooks reflect advanced technical competence spanning integrated photonics modeling, microwave photonics, automated layout generation, and programmable mesh topology algorithms.
+
+At the component and analytical level, there is a strong foundation in formulating and computing transfer matrix models for integrated interferometric circuits, including symmetric Mach-Zehnder interferometers (MZIs) and MZI-assisted tunable ring resonators (RAMZIs) evaluated across both linear and logarithmic scales. This includes modeling dispersion by extracting effective and group indices via polynomial fits, while rigorously accounting for physical manufacturing imperfections such as multimode interference (MMI) coupler power splitting imbalances, intrinsic waveguide attenuation, and phase-shifter fabrication offsets to quantify extinction ratio degradation.
+
+Extending these principles to microwave photonics and high-frequency signal processing, the work encompasses the generation of optical single-sideband (SSB) modulation using dual-drive Mach-Zehnder modulators biased in quadrature for linear operation. By bridging time-domain electro-optic interaction and frequency-domain spectral analysis via fast Fourier transforms, the approach effectively realizes optical notch filtering and coherent RF harmonic extraction at critical carrier bands like 5 GHz and 20 GHz.
+
+These theoretical frameworks translate directly into physical design and fabrication readiness through programmatic layout automation in `gdsfactory`. The design methodology incorporates strict photonic design rules, implementing complex multi-MZI hexagonal cells within tight spatial envelopes (2500 × 1500 $\mu$m) while managing minimum Euler bend radii, layer hierarchies, and zero waveguide crossings. Crucially, the designs feature complete electro-optical I/O interfaces, integrating standardized fiber grating coupler arrays at a 127 $\mu$m pitch alongside dedicated electrical routing and metal pad layouts at a 150 $\mu$m pitch for independent thermo-optic phase tuning.
+
+Finally, bridging physical hardware and higher-level network control, the workflow abstracts reconfigurable optical fabrics—such as triangular and hexagonal tri-lattice topologies—into graph-theoretical models using `NetworkX`. This graph-level representation enables automated shortest-path optical routing between arbitrary input and output ports, coupled with topological diagnostic routines that identify adjacent unilluminated ports and quantify potential crosstalk arising from non-ideal switching states.      </p>
                             </div>
 
-                            <div class="group pt-3 border-t border-slate-800/60">
-                                <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 mb-1">
-                                    <h4 class="text-sm font-semibold text-slate-200">Quantum State Tomography & Error Mitigation</h4>
-                                    <a href="https://github.com/tu-usuario/repo-error-mitigation" target="_blank" class="text-xs font-mono text-accent hover:underline">View repo →</a>
-                                </div>
-                                <p class="text-slate-400 text-xs leading-relaxed">
-                                    Post-processing frameworks to reconstruct density matrices and analyze fidelity degradation caused by depolarizing noise models.
-                                </p>
-                            </div>
+                           
                         </div>
                     </article>
